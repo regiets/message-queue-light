@@ -1,0 +1,22 @@
+{
+  "name": "message-queue-light",
+  "version": "0.0.1",
+  "description": "A simple wrapper around the RabbitMQ amqplib library, supporting events, rpc and commands",
+  "main": "index.js",
+  "scripts": {
+    "start:pub": "nodemon examples/pub.js",
+    "start:sub": "nodemon examples/sub.js",
+    "test": "jest --watchAll"
+  },
+  "author": "Philipp Steiger",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.5.5"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.4"
+  }
+}

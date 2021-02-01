@@ -1,0 +1,24 @@
+{
+    "env": {
+        "es6": true,
+        "node": true,
+        "jest": true
+    },
+    "extends": ["eslint:recommended", "google"],
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+        "comma-dangle": ["warn", "never"],
+        "indent": ["warn", "tab", { "SwitchCase": 1 }],
+        "linebreak-style": ["error", "unix"],
+        "max-len": ["warn", {"code": 140, "comments": 160}],
+        "no-console": ["warn", { allow: ["log", "warn", "error"] }],
+        "no-tabs": ["off"],
+        "quotes": ["warn", "single"],
+        "require-jsdoc": "off",
+        "semi": ["error", "always"],
+        "valid-jsdoc": "off",
+    }
+}
