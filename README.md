@@ -1,4 +1,12 @@
-## message-queue-light
+# message-queue-light
+
+## Get Started
+
+Install the AMQP wrapper with npm.
+
+```sh
+npm install --save message-queue-light
+```
 
 #### Config
 

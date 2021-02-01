@@ -1,6 +1,6 @@
 {
   "name": "message-queue-light",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple wrapper around the RabbitMQ amqplib library, supporting events, rpc and commands",
   "main": "index.js",
   "scripts": {
