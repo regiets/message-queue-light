@@ -2,10 +2,37 @@
 
 ## Get Started
 
-Install the AMQP wrapper with npm.
+1. Install the AMQP wrapper with npm.
 
 ```sh
 npm install --save message-queue-light
+```
+
+2. Subscribing to event/rpc/command queues. // TODO
+```js
+const mq = require('message-queue-light')
+
+const config = {
+	url: 'amqp://...',
+	queue: 'example_queue',
+	bindings: [
+		{exchange: 'rpc', routingKey: 'search.all', handler: () => {}}
+	]
+};
+
+mq.init(config);
+```
+
+3. Adding an event/rpc/comand to a queue. // TODO
+```js
+// PUBLISH EVENT - .evt(routingKey, content, options)
+mq.evt('USER_CREATED', {data}, {contentType})
+
+// PUBLISH RPC - .rpc(routingKey, content[, options])
+mq.rpc('GRAPH_SVC', {data}, {contentType, expiration})
+
+// PUBLISH COMMAND - .cmd(routingKey, content, options)
+mq.cmd('CREATE_SERVICE', {data}, {contentType})
 ```
 
 #### Config
